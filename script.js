@@ -1,18 +1,37 @@
-let apple = 1;
+alert("Welcome To Paradise");
 
-function applepie() {
-    var ingredientX = 5;
-    console.log(apple)
-}
-let pie2 = function(cinnamon) {
-    console.log(apple+cinnamon);
-}
-applepie();
-pie2(9);
-console.log(ingredientX);
+const name = document.getElementById("name");
+function myfunction()  {
+  var  name = prompt("What's your name?", "");
+    
+ let text = name + " is the goat.";
 
-if(myname != 'Sello'){
-    alert('error hacker error');
-} else {
-    alert('hello')
+        
+    
+    document.getElementById("text").innerHTML = text;
+    document.getElementById("text").style.color = "rgb(16,211,152)";
+
+};
+
+let secondName='';
+
+
+
+
+function tryAgain(){
+    let name = prompt("Whats your name?");
+   
+    while(secondName != name){ 
+     secondName = prompt("This name does not match!");
+    
+}
+ alert("Welcome back");
+}
+let userAns = ""
+
+function rating(){
+    let userAns = prompt("How would you rate my webpage 1-5?");
+    for(let x = 0; x < userAns; x++){
+        document.getElementById("thisPar").innerHTML += "<img src='http://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/cloud-with-lightning.png'>"
+    }
 }
